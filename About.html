@@ -1,60 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Title Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charles David Tan Portfolio</title>
 
-    <style type="text/css">
-        body{
-            background-image: url("vg.jpg");
-            background-size: cover;
-            color: indianred;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        a{
-            color: skyblue;
-        }
+<script src="https://cdn.tailwindcss.com"></script>
 
-        img{
-            border-radius: 50%;
-            margin: 20px 0;
-        }
-        .container{
-            background-color: white;
-            width: 50%;
-            margin: 10px auto;
-            padding: 10px;
-            border-radius: 15px;
-           
-        }
-    </style>
+<style>
+html {
+    scroll-behavior: smooth;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.glow:hover {
+    box-shadow: 0 0 25px rgba(34,211,238,0.5);
+}
+</style>
 </head>
-<body>
-<div class="container">
-<a href="HTML WEB.html"><h1> Charles David Tan</h1></a>
-</div>
-<div class="container">
-<a href="About.html"><h2> About Me</h2></a>
-<p> I am a <b>Computer Engineer</b> Graduate <br> currently working at <i>TechFactors Inc.</i></p>
-<ul> <b><i>Favorite Movies</i></b>
-<li> Spider-Man </li> 
-<li> Spider-Man 2</li> 
-<li> Spider-Man 3</li> 
-</ul>
-</div>
-<div class="container">
-<a href="Works.html"> <h2> My Works </h2> </a>
-</div>
-<!--
-<p> Done Robotics projects including embedded systems <br> from being a student upto being a robotics specialist</p>
 
-<ul>  <b><i>Robotics Projects</i></b>
-<li> SMART Medicine Dispenser </li> 
-<li> Search and Rescue Robot </li> 
-<li> SMART Traffic Light</li> 
-</ul>
--->
+<body class="bg-black text-white font-sans">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full bg-black/70 backdrop-blur z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+
+        <h1 class="font-bold text-cyan-400">PORTFOLIO</h1>
+
+        <div class="hidden md:flex space-x-6 text-sm">
+            <a href="#home" class="hover:text-cyan-400">Home</a>
+            <a href="#about" class="hover:text-cyan-400">About</a>
+            <a href="#experience" class="hover:text-cyan-400">Experience</a>
+            <a href="#projects" class="hover:text-cyan-400">Projects</a>
+            <a href="#skills" class="hover:text-cyan-400">Skills</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center px-6 pt-24">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- TEXT -->
+        <div>
+            <h1 class="text-4xl md:text-6xl font-extrabold orange-text mb-4">
+                Charles David Tan
+            </h1>
+
+            <p class="text-xl text-cyan-400 mb-2">
+                Computer Engineer • Robotics Specialist
+            </p>
+           
+
+            <!-- NEW FOCUS AREAS -->
+            <p class="text-sm text-gray-400 mb-4">
+                Robotics • IoT • ICT Programming • 3D Printing
+            </p>
+
+            <p class="text-sm text-orange-400 mb-4">
+                📧 charlestan0804@gmail.com  ☎️ +639051609402
+            </p>
+        
+
+            <p class="text-gray-400 mb-6">
+                I build Arduino, IoT, and robotics systems that connect hardware and software
+                into real-world solutions.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects"
+                   class="px-6 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 transition">
+                    View Projects
+                </a>
+
+                <a href="https://www.linkedin.com/in/charles-david-tan-715124337/" target="_blank"
+                   class="px-6 py-3 border border-cyan-400 rounded-xl hover:bg-cyan-400 hover:text-black transition">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="flex justify-center">
+            <img src="profile.jpg"
+                 class="w-64 h-64 object-cover rounded-full border-4 border-white-400 glow">
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-6 gradient-text">About Me</h2>
+
+    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        I am a Computer Engineering graduate specializing in robotics, ICT programming, and embedded systems.
+        I develop innovative solutions that integrate hardware and software, using technologies such as Arduino,
+        ESP32, and IoT platforms to create real-world applications.
+    </p>
+
+    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        Through my experience at TechFactors Inc., I have worked on robotics development, 3D printing, and
+        digital fabrication, building interactive systems designed for education and practical use.
+        I am passionate about combining engineering with creativity to develop innovative technologies.
+    </p>
+
+    <p class="text-gray-300 text-lg leading-relaxed">
+        I also enjoy teaching and sharing knowledge, helping students understand programming, robotics,
+        and problem-solving through hands-on learning and real-world applications.
+    </p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="bg-slate-900 py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+
+        <h2 class="text-3xl font-bold mb-8 gradient-text">Experience</h2>
+
+        <div class="p-6 md:p-8 rounded-2xl bg-slate-800 border border-cyan-400/30 glow">
+
+            <h3 class="text-xl md:text-2xl font-semibold text-cyan-400">
+                TechFactors Inc. — Robotics Specialist
+            </h3>
+
+            <p class="text-sm text-gray-400 mb-4">
+                July 2025 – Present
+            </p>
+
+            <p class="text-gray-300 mb-6 leading-relaxed">
+                Currently working in the Robotics Department at TechFactors Inc., where I contribute to the
+                development of innovative educational technologies. My role focuses on integrating Robotics, ICT Programming, and digital fabrication tools to create interactive and practical learning solutions.
+                I actively support both technical development and hands-on instruction for students.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-6 text-gray-300">
+
+                <ul class="space-y-2">
+                    <li> ⚪ Develop ICT-based programs using Java, C++, HTML, and other various programming language</li>
+                    <li> ⚪ Design and prototype innovative robotics systems</li>
+                    <li> ⚪ Work with embedded systems and IoT </li>
+                    <li> ⚪ System testing and troubleshooting</li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <li>⚪ Utilize 3D printing and 3D modeling</li>
+                    <li>⚪ Integrate innovative technologies in education</li>
+                    <li>⚪ Conduct demos and workshops</li>
+                    <li>⚪ Teach programming and robotics concepts</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-8 gradient-text">Projects</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-slate-900 p-5 rounded-2xl hover:scale-105 transition glow">
+            <img src="project1.jpg" class="rounded-xl mb-4">
+            <h3 class="text-lg font-semibold">IoT Medication Dispenser</h3>
+
+        </div>
+
+        <div class="bg-slate-900 p-5 rounded-2xl hover:scale-105 transition glow">
+            <img src="project2.jpg" class="rounded-xl mb-4">
+            <h3 class="text-lg font-semibold">SMART Traffic Light</h3>
+        </div>
+
+        <div class="bg-slate-900 p-5 rounded-2xl hover:scale-105 transition glow">
+            <img src="project3.jpg" class="rounded-xl mb-4">
+            <h3 class="text-lg font-semibold">IoT Hydrophonics</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="bg-black py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+
+        <h2 class="text-3xl font-bold mb-8 gradient-text">Skills</h2>
+
+        <div class="mb-8">
+            <h3 class="text-cyan-400 mb-4 font-semibold">Technical Skills</h3>
+
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">ICT Programming</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Java</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Python</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">C++</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">HTML</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Block-Based Programming</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Arduino</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Embedded Systems</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">IoT Development</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Robotics</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">3D Printing</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">3D Modeling</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Computer Hardware</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Computer Software</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Operating Systems</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">Windows OS</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">MAC OS</span>
+                <span class="px-4 py-2 bg-orange-400 text-black rounded-xl">LINUX OS</span>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-cyan-400 mb-4 font-semibold">Professional Skills</h3>
+
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-slate-700 rounded-xl">Problem Solving</span>
+                <span class="px-4 py-2 bg-slate-700 rounded-xl">Critical Thinking</span>
+                <span class="px-4 py-2 bg-slate-700 rounded-xl">Communication</span>
+                <span class="px-4 py-2 bg-slate-700 rounded-xl">Teaching & Facilitation</span>
+                <span class="px-4 py-2 bg-slate-700 rounded-xl">Teamwork</span>
+                <span class="px-4 py-2 bg-slate-700 rounded-xl">Adaptability</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer class="text-center py-8 text-gray-500 text-sm">
+    © 2026 Charles David Tan
+</footer>
 
 </body>
 </html>
